@@ -1,1 +1,0 @@
-# jamesrtruesdale.github.io
