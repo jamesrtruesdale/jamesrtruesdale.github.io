@@ -56,7 +56,7 @@ body {
 }
 
 mark {
-	background-color: transparent;
+	background-color: #121121;
 	color: inherit;
 }
 
@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #0a0;
 		overflow: hidden;
 	}
 
@@ -99,7 +99,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fff;
+		color: #0a0;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
@@ -214,7 +214,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #121121 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
