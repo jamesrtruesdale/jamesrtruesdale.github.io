@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #0a0;
+		background: #121121;
 		overflow: hidden;
 	}
 
@@ -340,7 +340,7 @@ input, select, textarea {
 		-ms-animation: overlay 1.5s 1.5s forwards;
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
-		
+
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -690,7 +690,7 @@ input, select, textarea {
 
 					#header nav a:active:before {
 						background-color: rgba(255, 255, 255, 0.35);
-						color: #0a0;
+						color: #121121;
 					}
 
 				#header nav a span {
