@@ -69,7 +69,7 @@ html {
 
 body {
 	background: #1B2A41;
-	overflow-y: auto;
+	overflow-y: visible;
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {

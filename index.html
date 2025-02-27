@@ -20,19 +20,21 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			html, body {
-				overflow-y: auto !important;
-				height: 100%;
+				overflow-y: visible;
+				height: auto;
+				min-height: 100%;
 			}
 			
 			#wrapper {
 				height: auto;
 				min-height: 100vh;
+				overflow-y: visible;
 			}
 			
 			/* Background effect removed to use solid color */
 			
 			#header {
-				padding-top: 5px;
+				padding-top: 40px;
 				padding-bottom: 40px;
 			}
 			
@@ -90,11 +92,12 @@
 		<script>
 			window.onload = function() { 
 				document.body.classList.remove('is-preload');
-				// Enable scrolling
-				document.querySelector('html').style.overflowY = 'auto';
-				document.querySelector('body').style.overflowY = 'auto';
+				// Enable scrolling - more consistent approach for Chrome
+				document.documentElement.style.overflow = 'visible';
+				document.body.style.overflow = 'visible';
 			}
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			// Remove this as it can cause issues with scrolling in Chrome
+			// window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
 	</body>
 </html>
