@@ -18,11 +18,33 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			html, body {
+				overflow-y: auto !important;
+				height: 100%;
+			}
+			
+			#wrapper {
+				height: auto;
+				min-height: 100vh;
+			}
+			
+			/* Background effect removed to use solid color */
+			
+			#header {
+				padding-top: 5px;
+				padding-bottom: 40px;
+			}
+			
+			.card-grid {
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
 			<div id="bg"></div>
-			<div id="overlay"></div>
 			<div id="main">
 
 				<!-- Header -->
@@ -54,19 +76,24 @@
 								<i class="fa fa-pencil fa-3x"></i>
 								<span>Blog</span>
 							</a>
+							<a href="case-studies.html" class="card">
+								<i class="fa fa-briefcase fa-3x"></i>
+								<span>Case Studies</span>
+							</a>
 						</div>
 					</header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Lambda Engineering Ltd. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+				<!-- Footer section removed -->
 
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
+			window.onload = function() { 
+				document.body.classList.remove('is-preload');
+				// Enable scrolling
+				document.querySelector('html').style.overflowY = 'auto';
+				document.querySelector('body').style.overflowY = 'auto';
+			}
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
 	</body>
